@@ -8,7 +8,13 @@ PickPal is a web app meant to help people make decisions, try new ideas and revi
 
 ## Startup
 
-1. Run ```supabase start``` in project root.
+1. Run ```supabase start``` in the project root.
 
-2. Run ```bun --bun run dev``` in /web folder
+2. Create a .env.local file in the project root directory with the following keys.
+    ```.env
+    NEXT_PUBLIC_SUPABASE_URL=<the_supabase_project_url>
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=<the_supabase_anon_key>
+    ```
+
+3. Run ```bun --bun run dev``` in the /web directory
 
