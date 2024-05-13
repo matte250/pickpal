@@ -1,4 +1,5 @@
 # PickPal
+PickPal is a web app meant to help people make decisions, try new ideas and review the decisions made.
 
 ## Dependencies
 - Bun: https://bun.sh/docs/installation
