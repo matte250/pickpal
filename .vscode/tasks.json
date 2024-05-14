@@ -7,7 +7,7 @@
         "type": "shell",
         "label": "run web",
         "group": "dev",
-        "command": "bun --bun run dev",
+        "command": "bun --env-file=../.env.local run dev",
         "options": {
             "cwd": "${workspaceFolder}/web"
         }
