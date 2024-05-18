@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .cell {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
 h1 {
   font-size: 2.5rem;
 }
