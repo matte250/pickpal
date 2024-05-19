@@ -14,6 +14,7 @@ PickPal is a web app meant to help people make decisions, try new ideas and revi
     ```.env
     NEXT_PUBLIC_SUPABASE_URL=<the_supabase_project_url>
     NEXT_PUBLIC_SUPABASE_ANON_KEY=<the_supabase_anon_key>
+    SUPABASE_SERVICE_ROLE_KEY=<the_supabase_service_role_key>
     ```
 
 3. Run ```bun --env-file=../.env.local run dev``` in the /web directory
