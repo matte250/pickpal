@@ -2,6 +2,7 @@ create schema if not exists app;
 
 grant usage on schema app to service_role;
 grant all privileges on all tables in schema app to service_role;
+alter default PRIVILEGES for role postgres in schema app grant ALL on TABLES to service_role;
 
 create table if not exists app.sessions (
   id uuid primary key default gen_random_uuid(),

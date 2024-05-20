@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createSupabaseClient } from "../utils/createSupabaseClient";
+import { createSupabaseClient } from "../utils/supabase/server";
 
 const excludedPaths = ["/login", "/error"];
 
@@ -9,7 +9,7 @@ export async function redirectToLoginMiddleware(request: NextRequest) {
         return NextResponse.next();
     }
 
-    const supabase = createSupabaseClient.server();
+    const supabase = createSupabaseClient();
     const { error } = await supabase.auth.getUser();
 
     if (error)

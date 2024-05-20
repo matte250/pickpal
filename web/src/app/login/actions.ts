@@ -1,10 +1,10 @@
 "use server"
 
 import { redirect } from "next/navigation"
-import { createSupabaseClient } from "../../utils/createSupabaseClient"
+import { createSupabaseClient } from "../../utils/supabase/server"
 
 export async function login() {
-    const supabase = createSupabaseClient.server()
+    const supabase = createSupabaseClient()
     const { error } = await supabase.auth.signInAnonymously()
   
     if (error) {
